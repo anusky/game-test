@@ -1,4 +1,4 @@
-# Arthem - Wallace - Alpha [Platformer, Metroidvania and PixelArt Game]
+# Game-test
 
 # Yoyo Game Maker Studio Documentation
 
@@ -14,10 +14,6 @@ Currently we are working on Character Sprites and Animation using Aseprite softw
 
 Our main language is GML from Game Studio Maker Engine.
 As an editor we usually use Visual Studio Code.
-
-# Distribution
-
-Arthem is only available on Pc for Windows and Mac users.
 
 ## Authors
 
