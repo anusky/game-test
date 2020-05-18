@@ -22,5 +22,6 @@ Arthem is only available on Pc for Windows and Mac users.
 ## Authors
 
 We are two freaks in love with videogames world.
-[Anusky - Software Engineer](https://gamingfrommars.com/nosotros/anusky/)
-[Circenn - 3D Artist](https://gamingfrommars.com/nosotros/circenn/)
+
+- [Anusky - Software Engineer](https://gamingfrommars.com/nosotros/anusky/)
+- [Circenn - 3D Artist](https://gamingfrommars.com/nosotros/circenn/)
