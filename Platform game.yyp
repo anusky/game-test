@@ -111,6 +111,22 @@
             }
         },
         {
+            "Key": "479db1b3-5226-4071-8760-1ab1d3e6cbef",
+            "Value": {
+                "id": "ed5fc017-910e-4d4d-868a-b1a3349b40d7",
+                "resourcePath": "sprites\/sBullet\/sBullet.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "49aae327-545d-48ca-962c-98ad397f74eb",
+            "Value": {
+                "id": "76b44c3b-1298-4060-be11-43ab0a8ea838",
+                "resourcePath": "objects\/oBullet\/oBullet.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4b7bd400-75ee-42da-b501-25832d0edd96",
             "Value": {
                 "id": "3d58a8e6-fca2-48ac-9376-4129d0c4e69c",
