@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "52b4af61-97d2-4b32-8716-c4da96eb96a5",
+            "Value": {
+                "id": "a84ef886-5e13-4b04-bfb1-52e48ef2ab37",
+                "resourcePath": "sprites\/sEnemyR\/sEnemyR.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "5696322b-31c4-48f0-a983-91d63897d77e",
             "Value": {
                 "id": "abf521cc-dde1-4e93-909a-e7a69631c13f",
@@ -231,6 +239,14 @@
             }
         },
         {
+            "Key": "c4056aef-9e60-4f4a-a606-6eb7441850e7",
+            "Value": {
+                "id": "194ea21c-7b4d-4b9e-8dc5-59f30935a5c6",
+                "resourcePath": "sprites\/sEnemyA\/sEnemyA.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cb435741-c82b-44b8-a7c1-7cfe70962c7f",
             "Value": {
                 "id": "e2b87602-86ba-41a4-8849-940dec3a270d",
@@ -244,6 +260,14 @@
                 "id": "49b60399-5f10-41bb-9ada-eedcedb7c129",
                 "resourcePath": "options\/windows\/options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "ce6cee0f-e6e9-4bb4-9739-933a2dedd105",
+            "Value": {
+                "id": "277c38ad-40e3-4d10-b40d-93cb6c04d6f1",
+                "resourcePath": "sprites\/sEnemy\/sEnemy.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
