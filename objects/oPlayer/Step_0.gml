@@ -68,20 +68,23 @@ y += vsp;
 * Animation section
 */
 if(!onTheFloor) {
-	sprite_index = sPlayerA;  //tells which sprite in index terms we are using
+	sprite_index = sWallaceA;  //tells which sprite in index terms we are using
+
 	image_speed = 0; //to not automatically change Sprite position - avoid animate
 	if(sign(vsp) > 0) {
 		//means we are moving down
-		image_index = 1; //tells which image index for the sprite we are using
+		//image_index = 1; //tells which image index for the sprite we are using
+		image_speed = 1;
 	} else{
-		image_index = 0;
+		//image_index = 0;
+		image_speed = 0;
 	}
 	//another way to correctly write an if statement 
 	//if(sign(vsp) > 0) image_index = 0; image_index = 1  
 }
 else {
 	image_speed = 1;
-	if(hsp == 0) sprite_index = sPlayer; else sprite_index = sPlayerR; 
+	if(hsp == 0) sprite_index = sWallace; else sprite_index = sWallaceR; 
 	// if(sign(hsp) > 0) image_xscale = 1; else image_xscale = -1;
 	if(hsp != 0) image_xscale = sign(hsp); //same as last line
 }
