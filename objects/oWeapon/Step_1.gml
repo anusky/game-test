@@ -1,21 +1,25 @@
-/// @description Insert description here
+/// @description caca
 // You can write your code in this editor
  x = oPlayer.x + 10;
  y = oPlayer.y + 10;
- 
 
-	var haxis = gamepad_axis_value(0, gp_axislh);
-	var vaxis = gamepad_axis_value(0, gp_axislv);
-	//direction = point_direction(0, 0, haxis, vaxis);
-
+if(oPlayer.controller == 0) {
  image_angle = point_direction(x, y, mouse_x , mouse_y);
- //image_angle = direction
+}else {
+	var controllerh = gamepad_axis_value(0, gp_axisrh); //right analogic horizontal
+	var controllerv = gamepad_axis_value(0, gp_axisrv); //right analogic vertical
+	if( abs(controllerh) > 0.2 || abs(controllerv) > 0.2) {
+		controllerAngle = point_direction(0,0, controllerh, controllerv);
+	}
+	image_angle = controllerAngle;
+
+}
  
 firingDelay -= 1;
 recoil = max(0, recoil-1);
 
-if(mouse_check_button(mb_left) && firingDelay < 0) {
-	firingDelay = 5;
+if((mouse_check_button(mb_left) || gamepad_button_check(0, gp_shoulderrb)) && firingDelay < 0) {
+	firingDelay = 5; 
 	recoil = 4;
 /*	with (oPlayer) {
 		// this would apply what we do here to this object isntanced (oPlayer)
