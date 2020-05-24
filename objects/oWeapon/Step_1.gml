@@ -1,7 +1,7 @@
 /// @description caca
 // You can write your code in this editor
  x = oPlayer.x + 10;
- y = oPlayer.y + 10;
+ y = oPlayer.y + 5;
 
 if(oPlayer.controller == 0) {
  image_angle = point_direction(x, y, mouse_x , mouse_y);

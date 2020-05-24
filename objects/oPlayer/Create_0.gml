@@ -5,4 +5,4 @@ vsp=0 //vertical speed
 grv=0.3 //gravity
 walkspd=4 //walk speed
 
-controller=1
+controller=0
