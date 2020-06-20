@@ -6,3 +6,4 @@ grv=0.3 //gravity
 walkspd=4 //walk speed
 
 controller=0
+hascontrol= true

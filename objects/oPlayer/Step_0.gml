@@ -5,29 +5,42 @@
 
 
  
-// Player Input
+#region //Get Player Input
 // keyLeft = keyboard_check(vk_left) || keyboard_check(ord("A")) || gamepad_button_value(0, gp_padl);
 // keyRight = keyboard_check(vk_right) || keyboard_check(ord("D")) || gamepad_button_value(0, gp_padr);
 // keyJump = keyboard_check_pressed(vk_space) || keyboard_check(ord("W")) || gamepad_button_value(0, gp_face1);
-keyLeft = keyboard_check(vk_left) || keyboard_check(ord("A"));
-keyRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
-keyJump = keyboard_check_pressed(vk_space) || keyboard_check(ord("W"));
-if(keyLeft || keyRight || keyJump) {
-controller = 0;
+
+if(hascontrol) {
+
+	keyLeft = keyboard_check(vk_left) || keyboard_check(ord("A"));
+	keyRight = keyboard_check(vk_right) || keyboard_check(ord("D"));
+	keyJump = keyboard_check_pressed(vk_space) || keyboard_check(ord("W"));
+	if(keyLeft || keyRight || keyJump) {
+	controller = 0;
+	}
+
+	if( abs( gamepad_axis_value(0, gp_axislh)) > 0.2  ) {
+		keyLeft = abs(min(gamepad_axis_value(0, gp_axislh), 0));
+		keyRight = max(gamepad_axis_value(0, gp_axislh), 0);
+		controller = 1;
+	}
+
+	if(gamepad_button_check_pressed(0, gp_face1)) {
+		keyJump = 1;
+		controller = 1;
+	}
+
+}
+else {
+	keyRight = 0
+	keyLeft = 0
+	keyJump = 0
 }
 
-if( abs( gamepad_axis_value(0, gp_axislh)) > 0.2  ) {
-	keyLeft = abs(min(gamepad_axis_value(0, gp_axislh), 0));
-	keyRight = max(gamepad_axis_value(0, gp_axislh), 0);
-	controller = 1;
-}
+#endregion
 
-if(gamepad_button_check_pressed(0, gp_face1)) {
-	keyJump = 1;
-	controller = 1;
-}
+#region //Calculate Player Movement
 
-// Player movement 
 
 var move = keyRight - keyLeft;
 
@@ -40,9 +53,9 @@ var onTheFloor = place_meeting(x, y+1, oWall);
 if(onTheFloor) && (keyJump) {
 	vsp = -7;
 }
+#endregion
 
-
-// Player Horizontal Collision
+#region // Player Horizontal Collision
 if (place_meeting(x+hsp, y, oWall)){
 	while(!place_meeting(x+sign(hsp), y, oWall)) {
 		x += sign(hsp)
@@ -51,6 +64,7 @@ if (place_meeting(x+hsp, y, oWall)){
 }
 
 x += hsp;
+
 
 
 // Player Vertical Collision
@@ -63,10 +77,9 @@ if (place_meeting(x, y+vsp, oWall)){
 
 y += vsp;
 
+#endregion
 
-/*
-* Animation section
-*/
+#region //Animation section
 if(!onTheFloor) {
 	sprite_index = sPlayerA;  //tells which sprite in index terms we are using
 
@@ -88,3 +101,5 @@ else {
 	// if(sign(hsp) > 0) image_xscale = 1; else image_xscale = -1;
 	if(hsp != 0) image_xscale = sign(hsp); //same as last line
 }
+
+#endregion

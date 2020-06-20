@@ -2,3 +2,10 @@
 /// @arg Mode - sets transition mode between next, restart and goto.
 /// @arg Target sets target room hen using the goto mode.
 
+with (oTransition)
+{
+	mode = argument[0]; 
+	//SlideTransition(hello, goodbye, mode, target);
+	if (argument_count > 1) target = argument[1];
+	
+}

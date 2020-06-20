@@ -1,15 +1,16 @@
 /// @description Progress the transition
 // You can write your code in this editor
+minValue = 1.2
 
 if(mode != TRANS_MODE.OFF) {
 	if(mode == TRANS_MODE.INTRO) {
 		percent = max(0, percent - max((percent/10), 0.005));
 		
 	} else {
-		percent = min(1, percent + max(((1-percent) /10), 0.005));
+		percent = min(minValue, percent + max(((minValue-percent) /10), 0.005));
 		
 	}
-	if(percent == 1 || percent == 0) {
+	if(percent == minValue || percent == 0) {
 		switch(mode){
 			case TRANS_MODE.INTRO: 
 			{
