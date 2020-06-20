@@ -98,7 +98,7 @@
             "Key": "2e16b3a7-547d-44e4-a31d-d865eda005a4",
             "Value": {
                 "id": "b8bf3ccd-885f-474f-8dda-090a7b8d2e73",
-                "resourcePath": "objects\\oCamera\\oCamera.yy",
+                "resourcePath": "objects\/oCamera\/oCamera.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -106,7 +106,7 @@
             "Key": "30626ca1-d979-49f8-94b9-5dcb3a6139c7",
             "Value": {
                 "id": "3ee13b1d-cf24-4023-84a2-26861b0ebc6c",
-                "resourcePath": "objects\\oDead\\oDead.yy",
+                "resourcePath": "objects\/oDead\/oDead.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -130,7 +130,7 @@
             "Key": "45ab4f24-5edc-421a-99de-6126e037fbd9",
             "Value": {
                 "id": "de73293c-401b-459d-9165-32a0529408fa",
-                "resourcePath": "shaders\\shWhite\\shWhite.yy",
+                "resourcePath": "shaders\/shWhite\/shWhite.yy",
                 "resourceType": "GMShader"
             }
         },
@@ -199,10 +199,18 @@
             }
         },
         {
+            "Key": "62b3006d-70b7-4220-a0eb-93d9e0239cec",
+            "Value": {
+                "id": "8db43905-37da-4fac-9b3c-6d0c7fb39f9c",
+                "resourcePath": "scripts\/SlideTransition\/SlideTransition.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "67d9e1bc-e313-4f96-946f-f452bca206d5",
             "Value": {
                 "id": "d24bd17a-69e0-4412-b676-4d4d69423b0d",
-                "resourcePath": "tilesets\\tTiles\\tTiles.yy",
+                "resourcePath": "tilesets\/tTiles\/tTiles.yy",
                 "resourceType": "GMTileSet"
             }
         },
@@ -210,7 +218,7 @@
             "Key": "7b72eee0-1f5a-4f2c-849a-595f5e48c056",
             "Value": {
                 "id": "8525b8e3-dddb-43e5-bfff-aee609f01eb4",
-                "resourcePath": "sprites\\sWallaceR\\sWallaceR.yy",
+                "resourcePath": "sprites\/sWallaceR\/sWallaceR.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -218,7 +226,7 @@
             "Key": "7b9c36ff-b9e6-4fe3-bfa7-6caa7a235be3",
             "Value": {
                 "id": "29d90902-b968-4a2b-8456-6f3a36182f86",
-                "resourcePath": "sprites\\sWallaceA\\sWallaceA.yy",
+                "resourcePath": "sprites\/sWallaceA\/sWallaceA.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -231,10 +239,18 @@
             }
         },
         {
+            "Key": "83f6d85c-303a-426f-9287-d163fb7d402b",
+            "Value": {
+                "id": "ca3234fc-c2f9-4497-9b92-8eeb586cae15",
+                "resourcePath": "objects\/oTransition\/oTransition.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "970b74e6-936c-4c9a-80da-6d343ae35546",
             "Value": {
                 "id": "52a1c097-c7c9-49ee-bc63-8cbd0b31c9a3",
-                "resourcePath": "sprites\\sEnemyD\\sEnemyD.yy",
+                "resourcePath": "sprites\/sEnemyD\/sEnemyD.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -260,6 +276,14 @@
                 "id": "cfea10b2-5c52-41cd-bee9-f564fdb9767d",
                 "resourcePath": "views\/a6522ee3-641b-4c74-80c2-53dc5a138c74.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
+            "Value": {
+                "id": "eae01752-26db-4bce-aa1d-6aa3563fded4",
+                "resourcePath": "options\/linux\/options_linux.yy",
+                "resourceType": "GMLinuxOptions"
             }
         },
         {
@@ -306,7 +330,7 @@
             "Key": "ca463a3d-ee72-4b06-93e5-4077806438e8",
             "Value": {
                 "id": "43ece517-873a-42ef-a49a-868e9404e71b",
-                "resourcePath": "sprites\\sWallace\\sWallace.yy",
+                "resourcePath": "sprites\/sWallace\/sWallace.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -338,7 +362,7 @@
             "Key": "d26970cf-68e6-4b33-af4f-11e28ba0f5bd",
             "Value": {
                 "id": "7154fa63-3e93-4a1f-be34-b44cea500deb",
-                "resourcePath": "objects\\oEnemy\\oEnemy.yy",
+                "resourcePath": "objects\/oEnemy\/oEnemy.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -346,7 +370,7 @@
             "Key": "de8004a7-e9b5-4b69-85c3-66361f98b274",
             "Value": {
                 "id": "283f1df5-fe14-4d08-8e8d-5fdf28e36904",
-                "resourcePath": "sprites\\sTiles\\sTiles.yy",
+                "resourcePath": "sprites\/sTiles\/sTiles.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -356,6 +380,14 @@
                 "id": "bc0ae73d-9233-473d-9793-5e7f2f1e589f",
                 "resourcePath": "sprites\/sPlayerR\/sPlayerR.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "e4fbc2af-12b7-4a28-9413-b676778dc49e",
+            "Value": {
+                "id": "0e2cdc07-6f68-4532-8b16-217385f0d8b1",
+                "resourcePath": "rooms\/room01\/room01.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -376,7 +408,7 @@
         }
     ],
     "script_order": [
-        
+        "62b3006d-70b7-4220-a0eb-93d9e0239cec"
     ],
     "tutorial": ""
 }
