@@ -46,5 +46,6 @@ else {
 	image_speed = 1;
 	if(hsp == 0) sprite_index = sEnemy; else sprite_index = sEnemyR; 
 	// if(sign(hsp) > 0) image_xscale = 1; else image_xscale = -1;
-	if(hsp != 0) image_xscale = sign(hsp); //same as last line
+	if(hsp != 0) image_xscale = sign(hsp) * size; //same as last line
 }
+image_yscale = size;
