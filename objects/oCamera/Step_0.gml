@@ -24,3 +24,17 @@ shakeRemain = max(0, shakeRemain - ( (1/shakeLength)*shakeMagnitude));
 
 // Update camera view
 camera_set_view_pos(cam, x - view_w_half, y - view_h_half); //center player on the viewport
+
+
+MOUNTAINS="Mountains";
+TREES="Trees"
+
+if(layer_exists(MOUNTAINS)) {
+	//mountainLayer = layer_get_id(LAYER_TYPES)
+	layer_x(MOUNTAINS, x*0.5)
+}
+
+if(layer_exists(TREES)) {
+	//mountainLayer = layer_get_id(LAYER_TYPES)
+	layer_x(TREES, x*0.25)
+}
