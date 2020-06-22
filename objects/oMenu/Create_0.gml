@@ -1,4 +1,8 @@
 /// @description GUI/Vars/Menu Setup
+
+#macro SAVEFILE "Save.sav" //Is like a js constant / global const
+
+
 guiWidth = display_get_gui_width();
 guiHeight = display_get_gui_height();
 guiMargin = 32;
@@ -8,7 +12,7 @@ menuY = guiHeight - guiMargin;
 menuXTarget = guiWidth - guiMargin;
 menuSpeed = 25; //lower is faster
 menuFont = fMenu;
-menuItemHeight = font_get_size(fMenu);
+menuItemHeight = font_get_size(menuFont);
 menuCommitted = -1; 
 menuControl = true;
 
