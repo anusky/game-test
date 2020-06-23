@@ -22,6 +22,8 @@ if((mouse_check_button(mb_left) || gamepad_button_check(0, gp_shoulderrb)) && fi
 	firingDelay = 5; 
 	recoil = 4;
 	ScreenShake(2, 10);
+	audio_sound_pitch(snShot, choose(0.8, 1.0, 1.2));
+	audio_play_sound(snShot, 5, false);
 /*	with (oPlayer) {
 		// this would apply what we do here to this object isntanced (oPlayer)
 	}*/

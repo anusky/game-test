@@ -96,10 +96,15 @@ if(!onTheFloor) {
 	//if(sign(vsp) > 0) image_index = 0; image_index = 1  
 }
 else {
+	if(sprite_index == sPlayerA) {
+		audio_sound_pitch(snLanding, choose(0.8, 1.0, 1.2));
+		audio_play_sound(snLanding, 5, false);
+	}
 	image_speed = 1;
 	if(hsp == 0) sprite_index = sPlayer; else sprite_index = sPlayerR; 
 	// if(sign(hsp) > 0) image_xscale = 1; else image_xscale = -1;
 	if(hsp != 0) image_xscale = sign(hsp); //same as last line
+	
 }
 
 #endregion
